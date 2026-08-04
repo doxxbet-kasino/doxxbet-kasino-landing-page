@@ -16,6 +16,12 @@ export const site = {
    */
   gtmId: '',
 
+  /**
+   * Google Analytics 4 measurement ID (napr. 'G-XXXXXXXXXX').
+   * Ak zostane prázdny reťazec, GA4 sa do stránky vôbec nevloží.
+   */
+  ga4Id: 'G-LWWT8Z21BV',
+
   logo: {
     src: '/images/logo.webp',
     alt: 'DOXXbet Casino – logo',
