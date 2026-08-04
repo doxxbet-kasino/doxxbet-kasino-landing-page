@@ -1,0 +1,73 @@
+---
+import { balicky } from '../data/content';
+
+const dekory = [
+  { src: '/images/balik-dekor-2.webp', alt: '' },
+  { src: '/images/balik-dekor-1.webp', alt: '' },
+];
+---
+
+<section class="relative overflow-hidden bg-linear-to-b from-ink-softer to-ink">
+  <!-- glitter na spodku sekcie za poslednou kartou (ako v originále) -->
+  <img
+    src="/images/balik-dekor-3.webp"
+    alt=""
+    loading="lazy"
+    class="pointer-events-none absolute bottom-0 right-0 hidden w-2/3 max-w-4xl object-contain md:block"
+  />
+
+  <div class="relative mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <h2 class="text-center font-heading text-3xl font-bold italic uppercase text-white md:text-5xl">
+      {balicky.nadpisPred}
+    </h2>
+    <p class="mt-2 text-center font-heading text-2xl font-bold italic text-brand md:text-4xl">
+      {balicky.nadpisPo}
+    </p>
+    <p class="mx-auto mt-6 max-w-2xl text-center text-lg text-white">{balicky.popis}</p>
+
+    <div class="mt-14 space-y-14">
+      {
+        balicky.polozky.map((balik, i) => (
+          <div
+            class:list={[
+              'flex flex-col items-center md:flex-row',
+              i === 1 && 'md:flex-row-reverse',
+              i === 2 && 'md:justify-center',
+            ]}
+          >
+            <div class="card-gold relative w-full max-w-[39rem] p-6 md:p-8">
+              <img
+                src="/images/icon-urovne.png"
+                alt=""
+                width="40"
+                height="40"
+                class="absolute left-6 top-6 h-9 w-9 md:left-10 md:top-10 md:h-11 md:w-11"
+              />
+              <p class="text-center font-heading text-5xl font-bold text-brand-light md:text-7xl">
+                {balik.suma}
+              </p>
+              <img
+                src={balik.obrazok}
+                alt={balik.alt}
+                width="558"
+                height="558"
+                loading="lazy"
+                class="mt-8 w-full"
+              />
+            </div>
+            {i < 2 && (
+              <div class:list={['hidden flex-1 md:flex', i === 1 ? 'justify-end' : 'justify-start']}>
+                <img
+                  src={dekory[i].src}
+                  alt=""
+                  loading="lazy"
+                  class="max-h-[30rem] w-auto object-contain"
+                />
+              </div>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

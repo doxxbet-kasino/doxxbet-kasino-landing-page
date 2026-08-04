@@ -1,0 +1,40 @@
+---
+import { hero } from '../data/content';
+---
+
+<section class="relative overflow-hidden bg-ink">
+  <img
+    src="/images/hero-bg.webp"
+    alt=""
+    fetchpriority="high"
+    class="absolute inset-0 h-full w-full object-cover"
+  />
+  <div class="absolute inset-0 bg-[rgba(33,33,33,0.8)]"></div>
+  <!-- zlatý presvit za modelkou ako v originále -->
+  <div
+    class="absolute inset-y-0 left-0 hidden w-1/2 bg-linear-to-r from-brand/60 to-transparent md:block"
+  >
+  </div>
+
+  <div class="relative mx-auto grid max-w-6xl items-end gap-8 px-4 pt-14 md:grid-cols-[2fr_3fr] md:gap-4 md:pt-0">
+    <div class="order-2 -mb-2 flex justify-center md:order-1 md:justify-start">
+      <img
+        src="/images/hero-model.webp"
+        alt="Hráčka s vernostnými kartami DOXXbet Casino"
+        width="469"
+        height="685"
+        class="w-64 max-w-full drop-shadow-2xl md:w-[26rem] md:-translate-y-0"
+      />
+    </div>
+
+    <div class="order-1 pb-4 text-center md:order-2 md:py-24 md:text-left">
+      <h1 class="font-heading text-4xl font-bold italic leading-tight md:text-6xl">
+        <span class="text-white">{hero.nadpisRiadok1}</span>
+        <br />
+        <span class="text-brand">{hero.nadpisRiadok2}</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-lg text-white md:text-2xl">{hero.text}</p>
+      <a href="#kontakt" class="btn-gold mt-10">{hero.cta}</a>
+    </div>
+  </div>
+</section>

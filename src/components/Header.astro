@@ -1,0 +1,26 @@
+---
+import { site } from '../data/site';
+---
+
+<header class="bg-ink-soft">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4">
+    <a href="/">
+      <img
+        src={site.logo.src}
+        alt={site.logo.alt}
+        width={site.logo.width}
+        height={site.logo.height}
+        class="h-9 w-auto md:h-[3.5rem]"
+      />
+    </a>
+    <a
+      href={site.kontakt.mapaUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 rounded-full border border-brand-light/40 px-4 py-2 text-xs font-medium text-white transition hover:border-brand-light md:text-sm"
+    >
+      <img src="/images/icon-pin.svg" alt="" class="h-3.5 w-3.5 md:h-4 md:w-4" />
+      {site.kontakt.adresa}
+    </a>
+  </div>
+</header>

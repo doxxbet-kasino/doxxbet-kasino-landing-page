@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Balicky from '../components/Balicky.astro';
+import Vyhody from '../components/Vyhody.astro';
+import Urovne from '../components/Urovne.astro';
+import PrvyKrat from '../components/PrvyKrat.astro';
+import Podmienky from '../components/Podmienky.astro';
+import Kontakt from '../components/Kontakt.astro';
+import Footer from '../components/Footer.astro';
+import { seo, podmienky } from '../data/content';
+import { site } from '../data/site';
+
+const firmaLd = {
+  '@context': 'https://schema.org',
+  '@type': site.jsonLd.typFirmy,
+  name: site.nazovFirmy,
+  description: seo.popis,
+  url: Astro.site?.href,
+  image: new URL(site.ogImage.src, Astro.site).href,
+  logo: new URL(site.logo.src, Astro.site).href,
+  email: site.kontakt.email,
+  telephone: site.kontakt.telefonJsonLd,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: site.jsonLd.adresa.ulica,
+    addressLocality: site.jsonLd.adresa.mesto,
+    postalCode: site.jsonLd.adresa.psc,
+    addressCountry: site.jsonLd.adresa.krajina,
+  },
+  areaServed: site.jsonLd.oblastPosobenia,
+  openingHours: 'Mo-Su 00:00-24:00',
+};
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: podmienky.polozky.map((polozka) => ({
+    '@type': 'Question',
+    name: polozka.otazka,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: polozka.odpoved,
+    },
+  })),
+};
+---
+
+<Layout title={seo.titulok} description={seo.popis}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(firmaLd)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd)} />
+  <Header />
+  <Hero />
+  <Balicky />
+  <Vyhody />
+  <Urovne />
+  <PrvyKrat />
+  <Podmienky />
+  <Kontakt />
+  <Footer />
+</Layout>

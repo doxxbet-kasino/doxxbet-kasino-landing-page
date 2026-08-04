@@ -1,0 +1,28 @@
+---
+import { vyhody } from '../data/content';
+---
+
+<section class="bg-[linear-gradient(160deg,#ffffff,rgba(218,180,79,0.29))]">
+  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <h2 class="text-center font-heading text-3xl font-bold italic uppercase text-ink-softer md:text-5xl">
+      {vyhody.nadpisPred}
+      <span class="heading-accent normal-case">{vyhody.nadpisAkcent}</span>
+    </h2>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-3">
+      {
+        vyhody.polozky.map((polozka) => (
+          <div class="rounded-2xl bg-white p-6 shadow-[0_0.375rem_0.625rem_rgba(218,180,79,0.35)]">
+            <img src={polozka.ikona} alt="" width="21" height="21" class="h-5 w-5" />
+            <h3 class="mt-3 font-heading text-xl font-bold italic text-brand">{polozka.titulok}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-ink">{polozka.text}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="#kontakt" class="btn-gold">{vyhody.cta}</a>
+    </div>
+  </div>
+</section>

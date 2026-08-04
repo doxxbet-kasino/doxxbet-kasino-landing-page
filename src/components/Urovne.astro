@@ -1,0 +1,49 @@
+---
+import { urovne } from '../data/content';
+
+/* Farby rímskych číslic podľa úrovní z pôvodného dizajnu (Black → Diamond) */
+const farbyCislic = ['text-[#b1bacc]', 'text-[#e7efff]', 'text-[#ccb16a]', 'text-brand'];
+---
+
+<section class="bg-ink-soft">
+  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <h2 class="text-center font-heading text-3xl font-bold italic uppercase text-white md:text-5xl">
+      {urovne.nadpisPred}
+      <span class="heading-accent normal-case">{urovne.nadpisAkcent}</span>
+    </h2>
+    <p class="mx-auto mt-6 max-w-xl text-center text-lg text-white/90">{urovne.popis}</p>
+
+    <div class="mt-14 grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4">
+      {
+        urovne.kroky.map((krok, i) => (
+          <div class="flex flex-col items-center gap-4">
+            <p class:list={['font-accent text-5xl font-bold', farbyCislic[i]]}>{krok.rimske}</p>
+            <p class="rounded-md border border-[#b1bacc] bg-[#383838] px-3 py-1.5 text-center text-sm text-white">
+              {krok.podmienka}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {
+        urovne.karty.map((karta) => (
+          <div class="rounded-2xl bg-ink-softer p-6">
+            <h3 class="font-accent text-3xl font-bold italic text-white">{karta.nazov}</h3>
+            <p class="mt-5 text-sm leading-relaxed text-white">
+              <b>Občerstvenie zdarma</b>
+              <br />
+              {karta.obcerstvenie}
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-white">
+              <b>Výhody</b>
+              <br />
+              {karta.vyhody}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

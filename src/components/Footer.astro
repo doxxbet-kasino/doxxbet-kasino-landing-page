@@ -1,0 +1,18 @@
+---
+import { footer } from '../data/content';
+import { site } from '../data/site';
+---
+
+<footer class="bg-[#1b1b1b]">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6">
+    <img
+      src={site.logo.src}
+      alt={site.logo.alt}
+      width={site.logo.width}
+      height={site.logo.height}
+      loading="lazy"
+      class="h-9 w-auto md:h-12"
+    />
+    <p class="text-right text-xs text-white md:text-sm">{footer.text}</p>
+  </div>
+</footer>

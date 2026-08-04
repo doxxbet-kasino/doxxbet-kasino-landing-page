@@ -1,0 +1,33 @@
+---
+import { prvykrat } from '../data/content';
+---
+
+<section class="relative overflow-hidden">
+  <img
+    src="/images/prvykrat-bg.webp"
+    alt=""
+    loading="lazy"
+    class="absolute inset-0 h-full w-full object-cover"
+  />
+  <div class="absolute inset-0 bg-[rgba(27,27,27,0.68)]"></div>
+
+  <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
+    <div>
+      <h2 class="font-heading text-3xl font-bold italic uppercase text-white md:text-5xl">
+        {prvykrat.akcent}
+      </h2>
+      <p class="heading-accent mt-2 text-4xl font-bold md:text-6xl">{prvykrat.nadpis}</p>
+      <p class="mt-8 max-w-md text-lg leading-relaxed text-white">{prvykrat.text}</p>
+    </div>
+    <div class="flex justify-center md:justify-end">
+      <img
+        src="/images/prvykrat-foto.webp"
+        alt="Krupiér pri rulete v DOXXbet Casino"
+        width="650"
+        height="566"
+        loading="lazy"
+        class="w-full max-w-lg"
+      />
+    </div>
+  </div>
+</section>

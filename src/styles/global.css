@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("/fonts/Degular_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("/fonts/Degular_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("/fonts/Degular_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("/fonts/Degular_RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("/fonts/Degular_LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Degular";
+  src: url("/fonts/Degular_BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-heading: "Degular", "Arial", sans-serif;
+  --font-accent: "Playfair Display", serif;
+  --font-body: "Degular", "Arial", sans-serif;
+
+  --color-brand: #dab44f;
+  --color-brand-light: #d1ac37;
+  --color-brand-dark: #6d5412;
+
+  --color-ink: #0b0b0b;
+  --color-ink-soft: #1d1d1d;
+  --color-ink-softer: #272727;
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-full bg-linear-to-br from-brand-dark to-brand px-8 py-4 text-center font-heading text-lg font-bold text-white shadow-lg shadow-black/50 transition hover:brightness-110;
+  }
+
+  .card-gold {
+    @apply rounded-2xl border-2 border-brand-light bg-ink;
+  }
+
+  .heading-accent {
+    @apply font-accent italic text-brand;
+  }
+}
