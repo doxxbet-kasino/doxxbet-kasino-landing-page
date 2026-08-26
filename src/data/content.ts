@@ -10,8 +10,8 @@ export const seo = {
 
 export const hero = {
   /** Nadpis má dva riadky: prvý biely, druhý zlatý. */
-  nadpisRiadok1: 'ZÍSKAJ WELCOME',
-  nadpisRiadok2: 'BONUS AŽ 1 000 €',
+  nadpisRiadok1: 'Získajte uvítací',
+  nadpisRiadok2: 'bonus 1 000 €',
   text: 'Príď do nášho kasína, vybav si hráčsku kartu a začni využívať výhody pri každej návšteve.',
   cta: 'Zaregistrovať sa na prevádzke',
 };
