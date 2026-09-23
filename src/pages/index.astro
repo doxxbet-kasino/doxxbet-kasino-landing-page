@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import Registracia from '../components/Registracia.astro';
 import Balicky from '../components/Balicky.astro';
 import Vyhody from '../components/Vyhody.astro';
 import Urovne from '../components/Urovne.astro';
@@ -52,8 +53,9 @@ const faqLd = {
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd)} />
   <Header />
   <Hero />
-  <Balicky />
   <Vyhody />
+  <Registracia />
+  <Balicky />
   <Urovne />
   <PrvyKrat />
   <Podmienky />

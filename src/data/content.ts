@@ -10,10 +10,34 @@ export const seo = {
 
 export const hero = {
   /** Nadpis má dva riadky: prvý biely, druhý zlatý. */
-  nadpisRiadok1: 'Získajte uvítací',
-  nadpisRiadok2: 'bonus 1 000 €',
-  text: 'Príď do nášho kasína, vybav si hráčsku kartu a začni využívať výhody pri každej návšteve.',
-  cta: 'Zaregistrovať sa na prevádzke',
+  nadpisRiadok1: 'Zaregistrujte sa',
+  nadpisRiadok2: 'a zbierajte výhody',
+  text: 'Príďte do DOXXbet Casina Zelená Voda, vybavte si hráčsku kartu priamo na prevádzke a odomknite welcome bonus aj výhody pri každej návšteve.',
+  cta: 'Ako prebieha registrácia',
+};
+
+export const registracia = {
+  nadpisPred: 'Hráčsku kartu vybavíte',
+  nadpisAkcent: 'priamo u nás',
+  popis: 'Registrácia prebieha na prevádzke. Náš personál vám pomôže so všetkým potrebným, aby ste mohli začať zbierať výhody hneď pri prvej návšteve.',
+  kroky: [
+    {
+      cislo: '01',
+      titulok: 'Príďte na prevádzku',
+      text: 'Navštívte DOXXbet Casino Zelená Voda — sme otvorení nonstop.',
+    },
+    {
+      cislo: '02',
+      titulok: 'Zaregistrujte sa',
+      text: 'Personál vám vysvetlí registráciu a vydá vašu osobnú hráčsku kartu.',
+    },
+    {
+      cislo: '03',
+      titulok: 'Zbierajte výhody',
+      text: 'Využite welcome bonus, cashback, promo tikety a postupujte na vyššie úrovne.',
+    },
+  ],
+  cta: 'Naplánovať návštevu',
 };
 
 export const balicky = {
@@ -40,9 +64,9 @@ export const balicky = {
 };
 
 export const vyhody = {
-  nadpisPred: 'Prečo sa oplatí mať',
-  nadpisAkcent: 'hráčsku kartu',
-  cta: 'Získať hráčsku kartu',
+  nadpisPred: 'S hráčskou kartou',
+  nadpisAkcent: 'získavate viac',
+  cta: 'Zaregistrovať sa na prevádzke',
   polozky: [
     {
       ikona: '/images/icon-cashback.png',
@@ -102,8 +126,8 @@ export const urovne = {
 
 export const prvykrat = {
   nadpis: 'Bez obáv!',
-  akcent: 'Prvýkrát v kasíne?',
-  text: 'Náš personál vám všetko vysvetlí a prevedie vás prvou hrou. Stačí prísť, zaregistrovať sa a fantastický welcome bonus je tvoj.',
+  akcent: 'Ešte nemáte hráčsku kartu?',
+  text: 'Stačí prísť na prevádzku. Náš personál vám vysvetlí registráciu, vybaví hráčsku kartu a prevedie vás prvými výhodami vernostného programu.',
 };
 
 export const podmienky = {
@@ -134,9 +158,9 @@ export const podmienky = {
 };
 
 export const kontakt = {
-  nadpisPred: 'Začni zbierať výhody',
+  nadpisPred: 'Príďte sa zaregistrovať',
   nadpisAkcent: 'ešte dnes',
-  text: 'Welcome bonus až 1 000 € ťa čaká priamo na prevádzke.',
+  text: 'Hráčsku kartu aj welcome bonus vybavíte priamo na prevádzke DOXXbet Casino Zelená Voda.',
   ctaMapa: 'Zobraziť trasu',
 };
 
