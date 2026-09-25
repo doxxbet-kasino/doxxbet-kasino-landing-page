@@ -14,16 +14,16 @@ const udaje = [
 ];
 ---
 
-<section id="kontakt" class="bg-[linear-gradient(180deg,rgba(209,172,55,0.5),#ffffff)]">
-  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
-    <h2 class="text-center font-heading text-3xl font-bold italic uppercase text-ink-softer md:text-5xl">
+<section id="kontakt" class="bg-[#0a0b16]">
+  <div class="mx-auto max-w-7xl px-4 py-20 lg:px-6 lg:py-28">
+    <h2 class="max-w-2xl font-heading text-4xl font-bold italic uppercase leading-none text-white md:text-6xl">
       {kontakt.nadpisPred}{' '}
       <span class="heading-accent normal-case">{kontakt.nadpisAkcent}</span>
     </h2>
-    <p class="mt-6 text-center text-lg text-ink">{kontakt.text}</p>
+    <p class="mt-6 max-w-xl text-lg text-white/70">{kontakt.text}</p>
 
-    <div class="mt-14 grid items-center gap-10 md:grid-cols-2">
-      <div>
+    <div class="mt-14 grid items-center gap-10 lg:grid-cols-2">
+      <div class="rounded-2xl border border-white/10 bg-[#141522] p-8 md:p-10">
         <dl class="grid gap-x-8 gap-y-6 sm:grid-cols-2">
           {
             udaje.map((udaj) => (
@@ -31,7 +31,7 @@ const udaje = [
                 <dt class="font-heading text-lg font-bold italic uppercase text-brand-light">
                   {udaj.popisok}
                 </dt>
-                <dd class="mt-1 text-lg font-light text-[#1b1b1b]">
+                <dd class="mt-1 text-lg font-light text-white/80">
                   {udaj.href ? (
                     <a href={udaj.href} class="hover:text-brand-dark">
                       {udaj.hodnota}
@@ -54,14 +54,14 @@ const udaje = [
         </a>
       </div>
 
-      <div class="flex justify-center md:justify-end">
+      <div class="relative overflow-hidden rounded-2xl">
         <img
           src="/images/kontakt-foto.webp"
           alt="Interiér DOXXbet Casino Zelená Voda"
           width="673"
           height="550"
           loading="lazy"
-          class="w-full max-w-lg rounded-2xl"
+          class="h-full min-h-[22rem] w-full object-cover"
         />
       </div>
     </div>

@@ -2,6 +2,7 @@
 
 :root {
   interpolate-size: allow-keywords;
+  color-scheme: dark;
 }
 
 @font-face {
@@ -63,7 +64,11 @@
 
 @layer components {
   .btn-gold {
-    @apply inline-flex items-center justify-center rounded-full bg-linear-to-br from-brand-dark to-brand px-8 py-4 text-center font-heading text-lg font-bold text-white transition hover:brightness-110;
+    @apply inline-flex items-center justify-center rounded-lg bg-linear-to-br from-brand-dark to-brand px-7 py-3.5 text-center font-heading text-lg font-bold text-white transition hover:brightness-110;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg border border-white/20 px-7 py-3.5 text-center font-heading text-lg font-bold text-white transition hover:border-brand hover:text-brand;
   }
 
   .card-gold {
@@ -73,4 +78,25 @@
   .heading-accent {
     @apply font-accent italic text-brand;
   }
+
+  .hero-tile {
+    @apply overflow-hidden rounded-xl border border-white/10 bg-[#141522] shadow-2xl;
+  }
+
+  .hero-tile img {
+    @apply h-full w-full object-cover transition duration-500 hover:scale-105;
+  }
 }
+
+.hero-glow {
+  position: absolute;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 9999px;
+  filter: blur(100px);
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.hero-glow-left { background: #9e6d12; left: -18rem; top: 2rem; }
+.hero-glow-right { background: #d1ac37; right: -20rem; bottom: -14rem; }

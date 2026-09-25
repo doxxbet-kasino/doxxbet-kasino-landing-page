@@ -2,39 +2,34 @@
 import { hero } from '../data/content';
 ---
 
-<section class="relative overflow-hidden bg-ink">
-  <img
-    src="/images/hero-bg.webp"
-    alt=""
-    fetchpriority="high"
-    class="absolute inset-0 h-full w-full object-cover"
-  />
-  <div class="absolute inset-0 bg-[rgba(33,33,33,0.8)]"></div>
-  <!-- zlatý presvit za modelkou ako v originále -->
-  <div
-    class="absolute inset-y-0 left-0 hidden w-1/2 bg-linear-to-r from-brand/60 to-transparent md:block"
-  >
-  </div>
-
-  <div class="relative mx-auto grid max-w-6xl items-end gap-8 px-4 pt-14 md:grid-cols-[2fr_3fr] md:gap-4 md:pt-0">
-    <div class="order-2 -mb-2 flex justify-center md:order-1 md:justify-start">
-      <img
-        src="/images/hero-model.webp"
-        alt="Hráčka s vernostnými kartami DOXXbet Casino"
-        width="469"
-        height="685"
-        class="w-64 max-w-full drop-shadow-2xl md:w-[26rem] md:-translate-y-0"
-      />
-    </div>
-
-    <div class="order-1 pb-4 text-center md:order-2 md:py-24 md:text-left">
-      <h1 class="font-heading text-4xl font-bold italic leading-tight md:text-6xl">
+<section class="relative isolate overflow-hidden bg-[#0a0b16]">
+  <div class="hero-glow hero-glow-left"></div>
+  <div class="hero-glow hero-glow-right"></div>
+  <div class="relative mx-auto grid min-h-[42rem] max-w-7xl items-center gap-12 px-4 py-16 lg:grid-cols-[0.86fr_1.14fr] lg:px-6 lg:py-24">
+    <div class="relative z-10 max-w-xl text-center lg:text-left">
+      <p class="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-brand">DOXXbet Casino Zelená Voda</p>
+      <h1 class="font-heading text-5xl font-bold italic leading-[0.92] md:text-7xl">
         <span class="text-white">{hero.nadpisRiadok1}</span>
         <br />
         <span class="text-brand">{hero.nadpisRiadok2}</span>
       </h1>
-      <p class="mt-6 max-w-xl text-lg text-white md:text-2xl">{hero.text}</p>
-      <a href="#registracia" class="btn-gold mt-10">{hero.cta}</a>
+      <p class="mt-7 max-w-lg text-lg leading-relaxed text-white/75">{hero.text}</p>
+      <div class="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
+        <a href="#registracia" class="btn-gold">{hero.cta}</a>
+        <a href="#kontakt" class="btn-ghost">Nájdite nás</a>
+      </div>
+    </div>
+    <div class="relative mx-auto w-full max-w-2xl lg:mr-0">
+      <div class="grid grid-cols-2 gap-4 rotate-[-5deg] sm:gap-6">
+        <div class="space-y-4 sm:space-y-6">
+          <figure class="hero-tile h-44 sm:h-56"><img src="/images/hero-bg.webp" alt="Interiér DOXXbet Casino Zelená Voda" fetchpriority="high" /></figure>
+          <figure class="hero-tile h-52 sm:h-72"><img src="/images/prvykrat-bg.webp" alt="Priestor DOXXbet Casino" /></figure>
+        </div>
+        <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-6">
+          <figure class="hero-tile h-52 sm:h-72"><img src="/images/kontakt-foto.webp" alt="Priestor kasína" /></figure>
+          <figure class="hero-tile relative h-44 overflow-hidden bg-linear-to-br from-brand-dark to-ink sm:h-56"><img src="/images/hero-model.webp" alt="Hráčka s vernostnou kartou DOXXbet Casino" class="object-contain object-bottom" /></figure>
+        </div>
+      </div>
     </div>
   </div>
 </section>
