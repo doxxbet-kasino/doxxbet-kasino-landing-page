@@ -100,3 +100,25 @@
 
 .hero-glow-left { background: #9e6d12; left: -18rem; top: 2rem; }
 .hero-glow-right { background: #d1ac37; right: -20rem; bottom: -14rem; }
+
+.reference-stage {
+  background-image: radial-gradient(circle at 12% 25%, rgba(209, 172, 55, 0.11), transparent 19rem), radial-gradient(circle at 90% 80%, rgba(109, 84, 18, 0.18), transparent 18rem);
+}
+
+.reference-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(110px);
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.reference-orb-a { width: 24rem; height: 24rem; background: #d1ac37; top: -12rem; left: -13rem; }
+.reference-orb-b { width: 30rem; height: 30rem; background: #6d5412; bottom: -16rem; right: -15rem; }
+
+.reference-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background: rgba(20, 21, 34, 0.88);
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.2);
+}

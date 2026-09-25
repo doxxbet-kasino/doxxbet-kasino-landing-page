@@ -1,9 +1,10 @@
 ---
 import { registracia } from '../data/content';
+import { site } from '../data/site';
 ---
 
-<section id="registracia" class="bg-[#0a0b16]">
-  <div class="mx-auto grid max-w-7xl gap-12 px-4 py-20 lg:grid-cols-[1fr_0.9fr] lg:px-6 lg:py-32">
+<section id="registracia" class="border-y border-white/8 bg-[#0d0e1a]">
+  <div class="mx-auto grid max-w-7xl gap-12 px-4 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:px-6 lg:py-28">
     <div>
       <p class="font-heading text-lg font-bold italic uppercase tracking-wide text-brand">
         Vernostný program DOXXbet Casino
@@ -13,22 +14,29 @@ import { registracia } from '../data/content';
         <span class="heading-accent normal-case">{registracia.nadpisAkcent}</span>
       </h2>
       <p class="mt-7 max-w-xl text-lg leading-relaxed text-white/70">{registracia.popis}</p>
-      <p class="mt-12 font-accent text-6xl font-bold italic text-brand/40 md:text-8xl">NONSTOP</p>
+      <div class="mt-12 grid max-w-xl grid-cols-2 gap-x-8 gap-y-8">
+        <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Kde nás nájdete</p><p class="mt-2 text-white/70">{site.kontakt.adresa}</p></div>
+        <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Otváracie hodiny</p><p class="mt-2 text-white/70">{site.kontakt.otvaracieHodiny}</p></div>
+        <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Telefonický kontakt</p><a class="mt-2 block text-white/70 hover:text-brand" href={`tel:${site.kontakt.telefony[0].replaceAll(' ', '')}`}>{site.kontakt.telefony[0]}</a></div>
+        <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Welcome bonus</p><p class="mt-2 text-white/70">Až 1 000 €</p></div>
+      </div>
+      <p class="mt-16 font-accent text-6xl font-bold italic text-brand/35 md:text-8xl">NONSTOP</p>
     </div>
 
-    <ol class="grid overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <div class="reference-card self-start p-8 md:p-10">
+      <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand">Registrácia na prevádzke</p>
+      <h3 class="mt-4 font-heading text-4xl font-bold italic leading-none text-white">Začnite hrať<br />s výhodami.</h3>
+      <ol class="mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-white/5">
       {
         registracia.kroky.map((krok) => (
-          <li class="flex gap-5 border-b border-white/10 p-7 last:border-b-0">
+          <li class="flex gap-5 border-b border-white/10 p-6 last:border-b-0">
             <span class="font-accent text-4xl font-bold italic text-brand">{krok.cislo}</span>
             <div><h3 class="font-heading text-2xl font-bold italic text-white">{krok.titulok}</h3><p class="mt-2 leading-relaxed text-white/65">{krok.text}</p></div>
           </li>
         ))
       }
-    </ol>
-
-    <div class="lg:col-span-2 -mt-4 text-center lg:mt-0">
-      <a href="#kontakt" class="btn-gold">{registracia.cta}</a>
+      </ol>
+      <a href={site.kontakt.mapaUrl} target="_blank" rel="noopener noreferrer" class="btn-gold mt-8 w-full">{registracia.cta}</a>
     </div>
   </div>
 </section>

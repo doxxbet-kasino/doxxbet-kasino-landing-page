@@ -3,10 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Registracia from '../components/Registracia.astro';
-import Balicky from '../components/Balicky.astro';
-import Vyhody from '../components/Vyhody.astro';
-import Urovne from '../components/Urovne.astro';
-import PrvyKrat from '../components/PrvyKrat.astro';
+import Program from '../components/Program.astro';
 import Podmienky from '../components/Podmienky.astro';
 import Kontakt from '../components/Kontakt.astro';
 import Footer from '../components/Footer.astro';
@@ -53,12 +50,8 @@ const faqLd = {
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd)} />
   <Header />
   <Hero />
-  <Vyhody />
+  <Program />
   <Registracia />
-  <Balicky />
-  <Urovne />
-  <PrvyKrat />
   <Podmienky />
-  <Kontakt />
   <Footer />
 </Layout>
