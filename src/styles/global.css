@@ -83,9 +83,9 @@
     @apply overflow-hidden rounded-xl border border-white/10 bg-[#141522] shadow-2xl;
   }
 
-  .hero-tile img {
-    @apply h-full w-full object-cover transition duration-500 hover:scale-105;
-  }
+.hero-tile img {
+  @apply h-full w-full object-cover transition duration-500 hover:scale-105;
+}
 }
 
 .hero-glow {
@@ -100,6 +100,14 @@
 
 .hero-glow-left { background: #9e6d12; left: -18rem; top: 2rem; }
 .hero-glow-right { background: #d1ac37; right: -20rem; bottom: -14rem; }
+
+.hero-collage {
+  transform: rotate(-6deg);
+  transform-origin: center;
+}
+
+.hero-tile-left { transform: rotate(3.5deg); }
+.hero-tile-right { transform: rotate(-3.5deg); }
 
 .reference-stage {
   background-image: radial-gradient(circle at 12% 25%, rgba(209, 172, 55, 0.11), transparent 19rem), radial-gradient(circle at 90% 80%, rgba(109, 84, 18, 0.18), transparent 18rem);

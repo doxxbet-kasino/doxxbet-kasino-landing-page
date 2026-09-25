@@ -1,34 +1,35 @@
 ---
 import { hero } from '../data/content';
+import { site } from '../data/site';
 ---
 
 <section class="relative isolate overflow-hidden bg-[#0a0b16]">
   <div class="hero-glow hero-glow-left"></div>
   <div class="hero-glow hero-glow-right"></div>
-  <div class="relative mx-auto grid min-h-[42rem] max-w-7xl items-center gap-12 px-4 py-16 lg:grid-cols-[0.86fr_1.14fr] lg:px-6 lg:py-24">
-    <div class="relative z-10 max-w-xl text-center lg:text-left">
+  <div class="relative mx-auto grid min-h-[46rem] max-w-[90rem] items-center gap-10 px-5 py-14 lg:grid-cols-[0.92fr_1.08fr] lg:px-12 lg:py-20">
+    <div class="relative z-10 max-w-2xl text-center lg:text-left">
       <p class="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-brand">DOXXbet Casino Zelená Voda</p>
-      <h1 class="font-heading text-5xl font-bold italic leading-[0.92] md:text-7xl">
+      <h1 class="font-heading text-6xl font-bold italic leading-[0.9] md:text-8xl">
         <span class="text-white">{hero.nadpisRiadok1}</span>
         <br />
         <span class="text-brand">{hero.nadpisRiadok2}</span>
       </h1>
-      <p class="mt-7 max-w-lg text-lg leading-relaxed text-white/75">{hero.text}</p>
+      <p class="mt-9 max-w-xl text-lg leading-relaxed text-white/75 md:text-2xl">{hero.text}</p>
       <div class="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
         <a href="#registracia" class="btn-gold">{hero.cta}</a>
-        <a href="#kontakt" class="btn-ghost">Nájdite nás</a>
+        <a href={site.kontakt.mapaUrl} target="_blank" rel="noopener noreferrer" class="btn-ghost">Nájdite nás</a>
       </div>
     </div>
-    <div class="relative mx-auto w-full max-w-2xl lg:mr-0">
-      <div class="grid grid-cols-2 gap-4 rotate-[-5deg] sm:gap-6">
-        <div class="space-y-4 sm:space-y-6">
-          <figure class="hero-tile h-44 sm:h-56"><img src="/images/hero-bg.webp" alt="Interiér DOXXbet Casino Zelená Voda" fetchpriority="high" /></figure>
-          <figure class="hero-tile h-52 sm:h-72"><img src="/images/prvykrat-bg.webp" alt="Priestor DOXXbet Casino" /></figure>
-        </div>
-        <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-6">
-          <figure class="hero-tile h-52 sm:h-72"><img src="/images/kontakt-foto.webp" alt="Priestor kasína" /></figure>
-          <figure class="hero-tile relative h-44 overflow-hidden bg-linear-to-br from-brand-dark to-ink sm:h-56"><img src="/images/hero-model.webp" alt="Hráčka s vernostnou kartou DOXXbet Casino" class="object-contain object-bottom" /></figure>
-        </div>
+    <div class="hero-collage relative mx-auto hidden w-full max-w-3xl grid-cols-2 gap-6 lg:grid">
+      <div class="space-y-7 pt-2">
+        <figure class="hero-tile hero-tile-left h-48"><img src="/images/hero-casino-01.jpg" alt="Hracie automaty DOXXbet Casino" fetchpriority="high" /></figure>
+        <figure class="hero-tile hero-tile-left h-64"><img src="/images/hero-casino-02.jpg" alt="Bar v DOXXbet Casino" /></figure>
+        <figure class="hero-tile hero-tile-left h-48"><img src="/images/hero-casino-03.jpg" alt="Atmosféra DOXXbet Casino" /></figure>
+      </div>
+      <div class="space-y-7 pt-10">
+        <figure class="hero-tile hero-tile-right h-56"><img src="/images/hero-casino-04.jpg" alt="Interiér DOXXbet Casino" /></figure>
+        <figure class="hero-tile hero-tile-right h-48"><img src="/images/hero-casino-05.jpg" alt="Herný priestor DOXXbet Casino" /></figure>
+        <figure class="hero-tile hero-tile-right h-56"><img src="/images/hero-casino-06.jpg" alt="Zážitok v DOXXbet Casino" /></figure>
       </div>
     </div>
   </div>
