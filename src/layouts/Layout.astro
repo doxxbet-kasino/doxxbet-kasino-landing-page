@@ -39,7 +39,7 @@ const ogImage = new URL(site.ogImage.src, Astro.site);
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="preload" as="image" href="/images/hero-bg.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/hero-gallery-bar.jpg" fetchpriority="high" />
     <link rel="preload" as="font" type="font/otf" href="/fonts/Degular_Bold.otf" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -85,7 +85,7 @@ const ogImage = new URL(site.ogImage.src, Astro.site);
     }
     <!-- TRACKING: ďalšie meracie kódy (Meta Pixel) patria sem -->
   </head>
-  <body class="font-body text-neutral-900 antialiased">
+  <body class="font-body bg-black text-white antialiased">
     {
       site.gtmId && (
         <noscript>

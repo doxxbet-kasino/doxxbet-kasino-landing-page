@@ -5,6 +5,15 @@
   color-scheme: dark;
 }
 
+html {
+  background: #050505;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+}
+
 @font-face {
   font-family: "Degular";
   src: url("/fonts/Degular_Regular.otf") format("opentype");
@@ -64,7 +73,7 @@
 
 @layer components {
   .btn-gold {
-    @apply inline-flex items-center justify-center rounded-lg bg-linear-to-br from-brand-dark to-brand px-7 py-3.5 text-center font-heading text-lg font-bold text-white transition hover:brightness-110;
+    @apply inline-flex items-center justify-center rounded-lg bg-linear-to-br from-[#9b721c] to-[#e2bd59] px-7 py-3.5 text-center font-heading text-lg font-bold text-black transition duration-200 hover:-translate-y-0.5 hover:brightness-110;
   }
 
   .btn-ghost {
@@ -225,16 +234,16 @@
   align-items: center;
   justify-content: center;
   min-width: 15rem;
-  border: 2px solid #e2b92f;
-  border-radius: 9999px;
-  background: #9f1010;
+  border: 1px solid #ebcb70;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #8c6616, #dfb94f);
   padding: 0.9rem 2rem;
-  color: #fff;
+  color: #070707;
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
-  box-shadow: 0 0.8rem 2.2rem rgba(159, 16, 16, 0.22);
+  box-shadow: 0 0.8rem 2.2rem rgba(218, 180, 79, 0.14);
   transition: filter 180ms ease, transform 180ms ease;
 }
 
@@ -253,24 +262,115 @@
   }
 }
 
-.reference-stage {
-  background-image: radial-gradient(circle at 12% 25%, rgba(209, 172, 55, 0.11), transparent 19rem), radial-gradient(circle at 90% 80%, rgba(109, 84, 18, 0.18), transparent 18rem);
+.section-kicker {
+  color: #dab44f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
 }
 
-.reference-orb {
+.section-title {
+  max-width: 70rem;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: clamp(3.6rem, 7vw, 7.2rem);
+  font-weight: 700;
+  line-height: 0.84;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: #dab44f;
+}
+
+.casino-halo {
   position: absolute;
+  width: 34rem;
+  height: 34rem;
   border-radius: 9999px;
-  filter: blur(110px);
-  opacity: 0.18;
+  background: #9b721c;
+  filter: blur(130px);
+  opacity: 0.13;
   pointer-events: none;
 }
 
-.reference-orb-a { width: 24rem; height: 24rem; background: #d1ac37; top: -12rem; left: -13rem; }
-.reference-orb-b { width: 30rem; height: 30rem; background: #6d5412; bottom: -16rem; right: -15rem; }
+.casino-halo-left { left: -20rem; top: 2rem; }
+.casino-halo-right { right: -20rem; top: 3rem; }
 
-.reference-card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  background: rgba(20, 21, 34, 0.88);
-  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.2);
+.benefit-column {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.word-band p {
+  width: max-content;
+  color: rgba(218, 180, 79, 0.62);
+  font-family: var(--font-heading);
+  font-size: clamp(2.1rem, 4.5vw, 4.5rem);
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.level-photo img {
+  object-position: center 38%;
+  filter: saturate(0.74) contrast(1.06);
+}
+
+.level-row {
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.level-row:hover {
+  border-color: rgba(218, 180, 79, 0.45);
+  background: rgba(218, 180, 79, 0.035);
+}
+
+.bonus-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.75rem;
+  background: linear-gradient(145deg, rgba(29, 26, 18, 0.82), rgba(8, 8, 8, 0.96));
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: border-color 200ms ease, transform 200ms ease;
+}
+
+.bonus-card:hover {
+  border-color: rgba(218, 180, 79, 0.55);
+  transform: translateY(-0.35rem);
+}
+
+.info-label {
+  color: #dab44f;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.final-cta img {
+  object-position: center 55%;
+  filter: saturate(0.7);
+}
+
+@media (min-width: 768px) {
+  .benefit-column {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 0;
+  }
+
+  .benefit-column:last-child {
+    border-right: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

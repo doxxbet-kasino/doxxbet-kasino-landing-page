@@ -2,25 +2,25 @@
 import { site } from '../data/site';
 ---
 
-<header class="relative z-20 border-b border-white/8 bg-[#0a0b16]">
-  <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-4 py-4 lg:px-6">
+<header class="relative z-20 border-b border-white/8 bg-[#070707]">
+  <div class="mx-auto flex max-w-[88rem] items-center justify-between gap-5 px-5 py-5 lg:px-12">
     <a href="/">
       <img
         src={site.logo.src}
         alt={site.logo.alt}
         width={site.logo.width}
         height={site.logo.height}
-        class="h-9 w-auto md:h-11"
+        class="h-10 w-auto md:h-12"
       />
     </a>
-    <nav class="hidden items-center gap-7 text-sm font-medium text-white/75 lg:flex" aria-label="Hlavná navigácia">
+    <nav class="hidden items-center gap-10 text-base font-medium text-white/70 lg:flex" aria-label="Hlavná navigácia">
       <a href="#vyhody" class="transition hover:text-brand">Výhody</a>
-      <a href="#registracia" class="transition hover:text-brand">Registrácia</a>
       <a href="#urovne" class="transition hover:text-brand">Úrovne</a>
-      <a href="#kontakt" class="transition hover:text-brand">Kontakt</a>
+      <a href="#bonusy" class="transition hover:text-brand">Bonusy</a>
+      <a href="#registracia" class="transition hover:text-brand">Registrácia</a>
     </nav>
-    <a href="#registracia" class="hidden rounded-full bg-linear-to-r from-brand-dark to-brand px-5 py-2.5 text-sm font-bold text-white transition hover:brightness-110 sm:inline-flex">
-      Získať hráčsku kartu
+    <a href="#registracia" class="btn-gold hidden sm:inline-flex">
+      Získať kartu
     </a>
   </div>
 </header>
