@@ -69,6 +69,11 @@ export const vyhody = {
   cta: 'Zaregistrovať sa na prevádzke',
   polozky: [
     {
+      ikona: '/images/icon-tiket.png',
+      titulok: 'WELCOME BONUS',
+      text: 'Hneď po registrácii si vyber vstupný bonus 125 €, 500 € alebo 1 000 € rozdelený do 10 častí. Každá časť prináša promo tikety aj extra odmeny.',
+    },
+    {
       ikona: '/images/icon-cashback.png',
       titulok: 'CASHBACK',
       text: 'Časť pretočených stávok získavaš naspäť vo forme cashbacku. Čím vyšší level dosiahneš, tým lepší pomer cashbacku máš.',

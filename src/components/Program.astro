@@ -1,5 +1,12 @@
 ---
 import { balicky, urovne, vyhody } from '../data/content';
+
+const benefitIcons = [
+  'M20 12v9H4v-9m16-5H4v5h16V7ZM12 21V7m0 0H8.5A2.5 2.5 0 1 1 11 4.5V7Zm0 0h3.5A2.5 2.5 0 1 0 13 4.5V7Z',
+  'M20 7h-5V2m5 5-3.2-3.2A8 8 0 0 0 4.6 6M4 17h5v5m-5-5 3.2 3.2A8 8 0 0 0 19.4 18',
+  'M4 20h4v-5H4v5Zm6 0h4V9h-4v11Zm6 0h4V4h-4v16Z',
+  'M21 12a3 3 0 0 0-3-3V5H6v4a3 3 0 0 0 0 6v4h12v-4a3 3 0 0 0 3-3Zm-8-4v2m0 4v2',
+];
 ---
 
 <section id="vyhody" class="relative overflow-hidden bg-[#080808]">
@@ -15,16 +22,22 @@ import { balicky, urovne, vyhody } from '../data/content';
       </p>
     </div>
 
-    <div class="mt-20 grid border-y border-white/12 md:grid-cols-3">
+    <div class="mt-20 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
       {
         vyhody.polozky.map((polozka, index) => (
-          <article class="benefit-column py-10 md:px-8 lg:px-11">
+          <article class="benefit-card flex min-h-[23rem] flex-col p-7 lg:p-8">
             <div class="flex items-start justify-between gap-5">
-              <img src={polozka.ikona} alt="" loading="lazy" class="h-14 w-14 object-contain opacity-90" />
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d={benefitIcons[index]} />
+                </svg>
+              </span>
               <span class="font-heading text-2xl text-brand/50">0{index + 1}</span>
             </div>
-            <h3 class="mt-14 font-heading text-3xl font-bold uppercase text-white">{polozka.titulok}</h3>
-            <p class="mt-4 max-w-sm text-base leading-relaxed text-white/58">{polozka.text}</p>
+            <div class="mt-auto pt-14">
+              <h3 class="font-heading text-2xl font-bold uppercase text-white">{polozka.titulok}</h3>
+              <p class="mt-4 max-w-sm text-base leading-relaxed text-white/58">{polozka.text}</p>
+            </div>
           </article>
         ))
       }
