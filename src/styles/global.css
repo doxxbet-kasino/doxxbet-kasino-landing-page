@@ -170,42 +170,6 @@ body {
   filter: drop-shadow(0 2rem 2.8rem rgba(0, 0, 0, 0.55));
 }
 
-.hero-cinematic-stamp {
-  position: absolute;
-  z-index: 3;
-  right: 1%;
-  bottom: 5%;
-  display: flex;
-  width: 10.5rem;
-  height: 10.5rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 242, 199, 0.7);
-  border-radius: 9999px;
-  background: linear-gradient(145deg, #eccb6d, #8a6515);
-  color: #080704;
-  text-align: center;
-  text-transform: uppercase;
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.42);
-  transform: rotate(8deg);
-}
-
-.hero-cinematic-stamp span {
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-}
-
-.hero-cinematic-stamp strong {
-  margin-top: 0.25rem;
-  max-width: 7rem;
-  font-family: var(--font-heading);
-  font-size: 1.65rem;
-  font-weight: 700;
-  line-height: 0.86;
-}
-
 .hero-renta-cta {
   display: inline-flex;
   align-items: center;
@@ -242,16 +206,6 @@ body {
     margin-top: -2rem;
   }
 
-  .hero-cinematic-stamp {
-    width: 8.5rem;
-    height: 8.5rem;
-    right: 7%;
-    bottom: 2%;
-  }
-
-  .hero-cinematic-stamp strong {
-    font-size: 1.3rem;
-  }
 }
 
 .section-kicker {
