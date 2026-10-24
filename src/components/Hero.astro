@@ -3,10 +3,19 @@ import { hero } from '../data/content';
 import { site } from '../data/site';
 ---
 
-<section class="hero-kit relative isolate overflow-hidden bg-[#0a0c16]">
-  <div class="hero-kit-glow" aria-hidden="true"></div>
-  <div class="hero-kit-glow hero-kit-glow-gold" aria-hidden="true"></div>
-  <div class="relative mx-auto grid min-h-[48rem] max-w-[88rem] items-center gap-12 px-5 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-12 lg:py-12">
+<section class="hero-cinematic relative isolate overflow-hidden bg-black">
+  <img
+    src="/images/hero-gallery-bar.jpg"
+    alt=""
+    width="1400"
+    height="933"
+    fetchpriority="high"
+    aria-hidden="true"
+    class="hero-cinematic-bg absolute inset-0 h-full w-full object-cover"
+  />
+  <div class="hero-cinematic-overlay absolute inset-0"></div>
+  <div class="hero-cinematic-glow" aria-hidden="true"></div>
+  <div class="relative mx-auto grid min-h-[47rem] max-w-[88rem] items-center gap-12 px-5 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-12 lg:py-12">
     <div class="relative z-10 mx-auto max-w-2xl text-center lg:mx-0 lg:text-left">
       <p class="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-brand">Aktuálna ponuka</p>
       <h1 class="font-heading text-7xl font-bold uppercase italic leading-[0.82] tracking-[-0.045em] sm:text-8xl lg:text-[7.2rem] xl:text-[8.2rem]">
@@ -24,22 +33,17 @@ import { site } from '../data/site';
       <p class="mt-8 text-sm tracking-wide text-white/65">18+ &nbsp; Vstup od 18 rokov. Hraj zodpovedne.</p>
     </div>
 
-    <div class="hero-gallery-collage relative mx-auto h-[35rem] w-full max-w-[43rem] lg:h-[48rem]" aria-hidden="true">
-      <figure class="hero-gallery-card hero-gallery-card-1">
-        <img src="/images/hero-gallery-machines.jpg" alt="" width="1400" height="788" fetchpriority="high" />
-      </figure>
-      <figure class="hero-gallery-card hero-gallery-card-2">
+    <div class="hero-cinematic-cards relative mx-auto hidden h-[42rem] w-full max-w-[36rem] lg:block" aria-hidden="true">
+      <figure class="hero-cinematic-card hero-cinematic-card-logo">
         <img src="/images/hero-gallery-logo.jpg" alt="" width="933" height="1400" />
       </figure>
-      <figure class="hero-gallery-card hero-gallery-card-3">
+      <figure class="hero-cinematic-card hero-cinematic-card-wheel">
         <img src="/images/hero-gallery-wheel.jpg" alt="" width="933" height="1400" />
       </figure>
-      <figure class="hero-gallery-card hero-gallery-card-4">
-        <img src="/images/hero-gallery-bar.jpg" alt="" width="1400" height="933" />
-      </figure>
-      <figure class="hero-gallery-card hero-gallery-card-5">
-        <img src="/images/hero-gallery-table.jpg" alt="" width="1400" height="933" />
-      </figure>
+      <div class="hero-cinematic-stamp">
+        <span>Aktuálna ponuka</span>
+        <strong>Ročná renta</strong>
+      </div>
     </div>
   </div>
 </section>
