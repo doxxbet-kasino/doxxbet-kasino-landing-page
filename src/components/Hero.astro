@@ -5,15 +5,14 @@ import { site } from '../data/site';
 
 <section class="hero-kit relative isolate overflow-hidden bg-[#0a0c16]">
   <div class="hero-kit-glow" aria-hidden="true"></div>
-  <div class="relative mx-auto grid min-h-[48rem] max-w-[90rem] items-center gap-10 px-5 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-12 lg:py-10">
-    <div class="relative z-10 max-w-2xl text-center lg:text-left">
+  <div class="hero-kit-glow hero-kit-glow-gold" aria-hidden="true"></div>
+  <div class="relative mx-auto grid min-h-[48rem] max-w-[88rem] items-center gap-12 px-5 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-12 lg:py-12">
+    <div class="relative z-10 mx-auto max-w-2xl text-center lg:mx-0 lg:text-left">
       <p class="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-brand">Aktuálna ponuka</p>
-      <h1 class="font-heading text-7xl font-bold leading-[0.72] tracking-[-0.035em] sm:text-8xl lg:text-[7.7rem] xl:text-[9rem]">
+      <h1 class="font-heading text-7xl font-bold uppercase italic leading-[0.82] tracking-[-0.045em] sm:text-8xl lg:text-[7.2rem] xl:text-[8.2rem]">
         <span class="text-white">{hero.nadpisRiadok1}</span>
         <br />
-        <span class="text-white">{hero.nadpisRiadok2}</span>
-        <br />
-        <span class="hero-kit-title">{hero.nadpisRiadok3}</span>
+        <span class="hero-kit-title">{hero.nadpisRiadok2}</span>
       </h1>
       <p class="mx-auto mt-10 max-w-xl text-xl leading-snug text-white/75 md:text-2xl lg:mx-0">
         <strong class="font-bold text-white">{hero.textPred}</strong>{hero.textPo}
@@ -25,22 +24,17 @@ import { site } from '../data/site';
       <p class="mt-8 text-sm tracking-wide text-white/65">18+ &nbsp; Vstup od 18 rokov. Hraj zodpovedne.</p>
     </div>
 
-    <div class="hero-kit-collage relative mx-auto h-[34rem] w-full max-w-[42rem] lg:h-[47rem]" aria-hidden="true">
-      <figure class="hero-kit-card hero-kit-card-1">
-        <img src="/images/hero-casino-01.jpg" alt="" width="1800" height="1200" fetchpriority="high" />
+    <div class="hero-showcase relative mx-auto h-[36rem] w-full max-w-[39rem] lg:h-[46rem]" aria-hidden="true">
+      <figure class="hero-showcase-main">
+        <img src="/images/hero-casino-03.jpg" alt="" width="1200" height="1800" fetchpriority="high" />
       </figure>
-      <figure class="hero-kit-card hero-kit-card-2">
+      <figure class="hero-showcase-card hero-showcase-card-top">
+        <img src="/images/hero-casino-01.jpg" alt="" width="1800" height="1200" />
+      </figure>
+      <figure class="hero-showcase-card hero-showcase-card-bottom">
         <img src="/images/hero-casino-04.jpg" alt="" width="1800" height="1200" />
       </figure>
-      <figure class="hero-kit-card hero-kit-card-3">
-        <img src="/images/hero-casino-03.jpg" alt="" width="1200" height="1800" />
-      </figure>
-      <figure class="hero-kit-card hero-kit-card-4">
-        <img src="/images/hero-casino-05.jpg" alt="" width="1800" height="1200" />
-      </figure>
-      <figure class="hero-kit-card hero-kit-card-5">
-        <img src="/images/hero-casino-06.jpg" alt="" width="1200" height="1800" />
-      </figure>
+      <div class="hero-showcase-badge"><span>Hraj o</span><strong>ročnú<br />rentu</strong></div>
     </div>
   </div>
 </section>

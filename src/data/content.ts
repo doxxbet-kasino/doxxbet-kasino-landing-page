@@ -10,8 +10,7 @@ export const seo = {
 
 export const hero = {
   nadpisRiadok1: 'Vyhraj',
-  nadpisRiadok2: 'ročnú',
-  nadpisRiadok3: 'rentu',
+  nadpisRiadok2: 'ročnú rentu',
   textPred: 'Staň sa členom DOXXbet,',
   textPo: ' získaj hráčsku kartu a zapoj sa do žrebovania o ročnú rentu.',
   cta: 'Vstúpiť do hry',
