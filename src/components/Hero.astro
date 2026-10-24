@@ -3,26 +3,19 @@ import { hero } from '../data/content';
 import { site } from '../data/site';
 ---
 
-<section class="hero-renta relative isolate overflow-hidden bg-black">
-  <img
-    src="/images/hero-renta-v2.png"
-    alt=""
-    width="1915"
-    height="821"
-    fetchpriority="high"
-    aria-hidden="true"
-    class="hero-renta-image absolute inset-0 h-full w-full object-cover"
-  />
-  <div class="hero-renta-overlay absolute inset-0"></div>
-  <div class="relative mx-auto flex min-h-[44rem] max-w-[90rem] items-center px-5 py-16 lg:px-12 lg:py-20">
-    <div class="relative z-10 max-w-3xl text-center lg:text-left">
-      <p class="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-brand">Aktuálna ponuka</p>
-      <h1 class="font-heading text-6xl font-bold uppercase italic leading-[0.82] tracking-[-0.035em] sm:text-7xl md:text-8xl xl:text-[7.4rem]">
+<section class="hero-kit relative isolate overflow-hidden bg-[#0a0c16]">
+  <div class="hero-kit-glow" aria-hidden="true"></div>
+  <div class="relative mx-auto grid min-h-[48rem] max-w-[90rem] items-center gap-10 px-5 py-16 lg:grid-cols-[0.85fr_1.15fr] lg:px-12 lg:py-10">
+    <div class="relative z-10 max-w-2xl text-center lg:text-left">
+      <p class="mb-6 text-sm font-bold uppercase tracking-[0.28em] text-brand">Aktuálna ponuka</p>
+      <h1 class="font-heading text-7xl font-bold leading-[0.72] tracking-[-0.035em] sm:text-8xl lg:text-[7.7rem] xl:text-[9rem]">
         <span class="text-white">{hero.nadpisRiadok1}</span>
         <br />
-        <span class="hero-renta-title">{hero.nadpisRiadok2}</span>
+        <span class="text-white">{hero.nadpisRiadok2}</span>
+        <br />
+        <span class="hero-kit-title">{hero.nadpisRiadok3}</span>
       </h1>
-      <p class="mx-auto mt-8 max-w-2xl text-xl leading-snug text-white/85 md:text-2xl lg:mx-0">
+      <p class="mx-auto mt-10 max-w-xl text-xl leading-snug text-white/75 md:text-2xl lg:mx-0">
         <strong class="font-bold text-white">{hero.textPred}</strong>{hero.textPo}
       </p>
       <div class="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
@@ -30,6 +23,24 @@ import { site } from '../data/site';
         <a href={site.kontakt.mapaUrl} target="_blank" rel="noopener noreferrer" class="btn-ghost">Nájdi nás</a>
       </div>
       <p class="mt-8 text-sm tracking-wide text-white/65">18+ &nbsp; Vstup od 18 rokov. Hraj zodpovedne.</p>
+    </div>
+
+    <div class="hero-kit-collage relative mx-auto h-[34rem] w-full max-w-[42rem] lg:h-[47rem]" aria-hidden="true">
+      <figure class="hero-kit-card hero-kit-card-1">
+        <img src="/images/hero-casino-01.jpg" alt="" width="1800" height="1200" fetchpriority="high" />
+      </figure>
+      <figure class="hero-kit-card hero-kit-card-2">
+        <img src="/images/hero-casino-04.jpg" alt="" width="1800" height="1200" />
+      </figure>
+      <figure class="hero-kit-card hero-kit-card-3">
+        <img src="/images/hero-casino-03.jpg" alt="" width="1200" height="1800" />
+      </figure>
+      <figure class="hero-kit-card hero-kit-card-4">
+        <img src="/images/hero-casino-05.jpg" alt="" width="1800" height="1200" />
+      </figure>
+      <figure class="hero-kit-card hero-kit-card-5">
+        <img src="/images/hero-casino-06.jpg" alt="" width="1200" height="1800" />
+      </figure>
     </div>
   </div>
 </section>
