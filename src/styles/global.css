@@ -249,18 +249,6 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.word-band p {
-  width: max-content;
-  color: rgba(218, 180, 79, 0.62);
-  font-family: var(--font-heading);
-  font-size: clamp(2.1rem, 4.5vw, 4.5rem);
-  font-weight: 700;
-  line-height: 0.85;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
 .level-photo img {
   object-position: center 38%;
   filter: saturate(0.74) contrast(1.06);
