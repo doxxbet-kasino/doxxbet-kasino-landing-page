@@ -3,17 +3,17 @@
  */
 
 export const seo = {
-  titulok: 'Kasíno Zelená Voda: Hráčska Karta & Bonusy',
+  titulok: 'Vyhraj ročnú rentu | DOXXbet Casino Zelená Voda',
   popis:
-    'Zaregistrujte sa v našom kasíne a užite si výhody hráčskej karty. Získajte až 1 000 € bonus a ďalšie benefity pri každej návšteve.',
+    'Staňte sa členom DOXXbet, získajte hráčsku kartu a zapojte sa do žrebovania o ročnú rentu.',
 };
 
 export const hero = {
-  /** Nadpis má dva riadky: prvý biely, druhý zlatý. */
-  nadpisRiadok1: 'Zaregistrujte sa',
-  nadpisRiadok2: 'a zbierajte výhody',
-  text: 'Príďte do DOXXbet Casina Zelená Voda, vybavte si hráčsku kartu priamo na prevádzke a odomknite welcome bonus aj výhody pri každej návšteve.',
-  cta: 'Ako prebieha registrácia',
+  nadpisRiadok1: 'Vyhraj',
+  nadpisRiadok2: 'ročnú rentu',
+  textPred: 'Staňte sa členom DOXXbet,',
+  textPo: ' získajte hráčsku kartu a zapojte sa do žrebovania o ročnú rentu.',
+  cta: 'Vstúpiť do hry',
 };
 
 export const registracia = {
