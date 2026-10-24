@@ -4,9 +4,18 @@ import { site } from '../data/site';
 ---
 
 <section class="hero-renta relative isolate overflow-hidden bg-black">
-  <div class="hero-renta-sparkles" aria-hidden="true"></div>
-  <div class="relative mx-auto grid min-h-[44rem] max-w-[90rem] items-center px-5 pt-14 lg:grid-cols-[1.03fr_0.97fr] lg:px-12 lg:pt-0">
-    <div class="relative z-10 max-w-3xl pb-12 text-center lg:pb-20 lg:pt-20 lg:text-left">
+  <img
+    src="/images/hero-renta-v2.png"
+    alt=""
+    width="1915"
+    height="821"
+    fetchpriority="high"
+    aria-hidden="true"
+    class="hero-renta-image absolute inset-0 h-full w-full object-cover"
+  />
+  <div class="hero-renta-overlay absolute inset-0"></div>
+  <div class="relative mx-auto flex min-h-[44rem] max-w-[90rem] items-center px-5 py-16 lg:px-12 lg:py-20">
+    <div class="relative z-10 max-w-3xl text-center lg:text-left">
       <p class="mb-5 text-sm font-bold uppercase tracking-[0.24em] text-brand">Aktuálna ponuka</p>
       <h1 class="font-heading text-6xl font-bold uppercase italic leading-[0.82] tracking-[-0.035em] sm:text-7xl md:text-8xl xl:text-[7.4rem]">
         <span class="text-white">{hero.nadpisRiadok1}</span>
@@ -18,21 +27,9 @@ import { site } from '../data/site';
       </p>
       <div class="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
         <a href="#registracia" class="hero-renta-cta">{hero.cta}</a>
-        <a href={site.kontakt.mapaUrl} target="_blank" rel="noopener noreferrer" class="btn-ghost">Nájdite nás</a>
+        <a href={site.kontakt.mapaUrl} target="_blank" rel="noopener noreferrer" class="btn-ghost">Nájdi nás</a>
       </div>
-      <p class="mt-8 text-sm tracking-wide text-white/65">18+ &nbsp; Vstup od 18 rokov. Hrajte zodpovedne.</p>
-    </div>
-
-    <div class="relative z-0 mx-auto flex h-[29rem] w-full max-w-[34rem] items-end justify-center self-end sm:h-[36rem] lg:h-[44rem]">
-      <div class="hero-renta-halo" aria-hidden="true"></div>
-      <img
-        src="/images/hero-model.webp"
-        alt="Členka DOXXbet Casino s hráčskymi kartami"
-        width="469"
-        height="681"
-        fetchpriority="high"
-        class="relative z-10 h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_0_45px_rgba(218,180,79,0.22)]"
-      />
+      <p class="mt-8 text-sm tracking-wide text-white/65">18+ &nbsp; Vstup od 18 rokov. Hraj zodpovedne.</p>
     </div>
   </div>
 </section>

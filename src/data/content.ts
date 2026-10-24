@@ -5,36 +5,36 @@
 export const seo = {
   titulok: 'Vyhraj ročnú rentu | DOXXbet Casino Zelená Voda',
   popis:
-    'Staňte sa členom DOXXbet, získajte hráčsku kartu a zapojte sa do žrebovania o ročnú rentu.',
+    'Staň sa členom DOXXbet, získaj hráčsku kartu a zapoj sa do žrebovania o ročnú rentu.',
 };
 
 export const hero = {
   nadpisRiadok1: 'Vyhraj',
   nadpisRiadok2: 'ročnú rentu',
-  textPred: 'Staňte sa členom DOXXbet,',
-  textPo: ' získajte hráčsku kartu a zapojte sa do žrebovania o ročnú rentu.',
+  textPred: 'Staň sa členom DOXXbet,',
+  textPo: ' získaj hráčsku kartu a zapoj sa do žrebovania o ročnú rentu.',
   cta: 'Vstúpiť do hry',
 };
 
 export const registracia = {
-  nadpisPred: 'Hráčsku kartu vybavíte',
+  nadpisPred: 'Hráčsku kartu vybavíš',
   nadpisAkcent: 'priamo u nás',
-  popis: 'Registrácia prebieha na prevádzke. Náš personál vám pomôže so všetkým potrebným, aby ste mohli začať zbierať výhody hneď pri prvej návšteve.',
+  popis: 'Registrácia prebieha na prevádzke. Náš personál ti pomôže so všetkým potrebným, aby si mohol začať zbierať výhody hneď pri prvej návšteve.',
   kroky: [
     {
       cislo: '01',
-      titulok: 'Príďte na prevádzku',
-      text: 'Navštívte DOXXbet Casino Zelená Voda — sme otvorení nonstop.',
+      titulok: 'Príď na prevádzku',
+      text: 'Navštív DOXXbet Casino Zelená Voda — sme otvorení nonstop.',
     },
     {
       cislo: '02',
-      titulok: 'Zaregistrujte sa',
-      text: 'Personál vám vysvetlí registráciu a vydá vašu osobnú hráčsku kartu.',
+      titulok: 'Zaregistruj sa',
+      text: 'Personál ti vysvetlí registráciu a vydá tvoju osobnú hráčsku kartu.',
     },
     {
       cislo: '03',
-      titulok: 'Zbierajte výhody',
-      text: 'Využite welcome bonus, cashback, promo tikety a postupujte na vyššie úrovne.',
+      titulok: 'Zbieraj výhody',
+      text: 'Využi welcome bonus, cashback, promo tikety a postupuj na vyššie úrovne.',
     },
   ],
   cta: 'Naplánovať návštevu',
@@ -65,7 +65,7 @@ export const balicky = {
 
 export const vyhody = {
   nadpisPred: 'S hráčskou kartou',
-  nadpisAkcent: 'získavate viac',
+  nadpisAkcent: 'získavaš viac',
   cta: 'Zaregistrovať sa na prevádzke',
   polozky: [
     {
@@ -126,8 +126,8 @@ export const urovne = {
 
 export const prvykrat = {
   nadpis: 'Bez obáv!',
-  akcent: 'Ešte nemáte hráčsku kartu?',
-  text: 'Stačí prísť na prevádzku. Náš personál vám vysvetlí registráciu, vybaví hráčsku kartu a prevedie vás prvými výhodami vernostného programu.',
+  akcent: 'Ešte nemáš hráčsku kartu?',
+  text: 'Stačí prísť na prevádzku. Náš personál ti vysvetlí registráciu, vybaví hráčsku kartu a prevedie ťa prvými výhodami vernostného programu.',
 };
 
 export const podmienky = {
@@ -158,12 +158,12 @@ export const podmienky = {
 };
 
 export const kontakt = {
-  nadpisPred: 'Príďte sa zaregistrovať',
+  nadpisPred: 'Príď sa zaregistrovať',
   nadpisAkcent: 'ešte dnes',
-  text: 'Hráčsku kartu aj welcome bonus vybavíte priamo na prevádzke DOXXbet Casino Zelená Voda.',
+  text: 'Hráčsku kartu aj welcome bonus vybavíš priamo na prevádzke DOXXbet Casino Zelená Voda.',
   ctaMapa: 'Zobraziť trasu',
 };
 
 export const footer = {
-  text: 'Vstup od 18 rokov. Hrajte zodpovedne.',
+  text: 'Vstup od 18 rokov. Hraj zodpovedne.',
 };

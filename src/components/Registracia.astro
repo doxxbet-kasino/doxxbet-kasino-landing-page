@@ -15,7 +15,7 @@ import { site } from '../data/site';
       </h2>
       <p class="mt-7 max-w-xl text-lg leading-relaxed text-white/70">{registracia.popis}</p>
       <div class="mt-12 grid max-w-xl grid-cols-2 gap-x-8 gap-y-8">
-        <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Kde nás nájdete</p><p class="mt-2 text-white/70">{site.kontakt.adresa}</p></div>
+        <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Kde nás nájdeš</p><p class="mt-2 text-white/70">{site.kontakt.adresa}</p></div>
         <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Otváracie hodiny</p><p class="mt-2 text-white/70">{site.kontakt.otvaracieHodiny}</p></div>
         <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Telefonický kontakt</p><a class="mt-2 block text-white/70 hover:text-brand" href={`tel:${site.kontakt.telefony[0].replaceAll(' ', '')}`}>{site.kontakt.telefony[0]}</a></div>
         <div><p class="text-sm font-bold uppercase tracking-wide text-brand">Welcome bonus</p><p class="mt-2 text-white/70">Až 1 000 €</p></div>
@@ -25,7 +25,7 @@ import { site } from '../data/site';
 
     <div class="reference-card self-start p-8 md:p-10">
       <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand">Registrácia na prevádzke</p>
-      <h3 class="mt-4 font-heading text-4xl font-bold italic leading-none text-white">Začnite hrať<br />s výhodami.</h3>
+      <h3 class="mt-4 font-heading text-4xl font-bold italic leading-none text-white">Začni hrať<br />s výhodami.</h3>
       <ol class="mt-8 grid overflow-hidden rounded-xl border border-white/10 bg-white/5">
       {
         registracia.kroky.map((krok) => (
