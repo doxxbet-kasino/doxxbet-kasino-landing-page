@@ -300,6 +300,46 @@ body {
   transform: translateY(-0.35rem);
 }
 
+.bonus-details[open] {
+  border-color: rgba(218, 180, 79, 0.42);
+  transform: none;
+}
+
+.bonus-toggle {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(218, 180, 79, 0.3);
+  border-radius: 9999px;
+  color: #dab44f;
+}
+
+.bonus-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 220ms ease;
+}
+
+.bonus-details[open] .bonus-toggle svg {
+  transform: rotate(180deg);
+}
+
+.bonus-table-head {
+  color: #dab44f;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.bonus-table-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
 .info-label {
   color: #dab44f;
   font-size: 0.73rem;
